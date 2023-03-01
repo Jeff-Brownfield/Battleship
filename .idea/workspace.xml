@@ -43,13 +43,13 @@
       <recent name="main.java.com.gamecontroller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Battleship">
+  <component name="RunManager" selected="JUnit.GridTests">
     <configuration name="Battleship" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.com.gamecontroller.Battleship" />
       <module name="Battleship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.com.view.*" />
+          <option name="PATTERN" value="main.java.com.gamecontroller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,7 +57,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShipTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GridTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Battleship" />
       <extension name="coverage">
         <pattern>
@@ -66,16 +66,66 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main.java.com.tests" />
-      <option name="MAIN_CLASS_NAME" value="main.java.com.tests.ShipTest" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.tests.GridTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.tests.PlayerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests.testGetGrid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.tests.PlayerTests" />
+      <option name="METHOD_NAME" value="testGetGrid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests.testGetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.tests" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.tests.PlayerTests" />
+      <option name="METHOD_NAME" value="testGetName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GridTests" />
+        <item itemvalue="JUnit.PlayerTests.testGetGrid" />
+        <item itemvalue="JUnit.PlayerTests.testGetName" />
         <item itemvalue="Application.Battleship" />
-        <item itemvalue="JUnit.ShipTest" />
+        <item itemvalue="JUnit.PlayerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -97,11 +147,6 @@
           <url>file://$PROJECT_DIR$/Battleship/Battleship/src/main/java/com/gamestate/Coordinate.java</url>
           <line>13</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Battleship/Battleship/src/main/java/com/gamestate/Grid.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -39,4 +39,7 @@ public class Ship {
 		return this.shipHealth;
 	}
 
+	public ShipType getType() {
+		return type;
+	}
 }

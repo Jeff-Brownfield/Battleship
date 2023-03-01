@@ -45,12 +45,12 @@ public class Grid {
 	}
 	
 		// (x,y) is assumed to be upper-left most cell for placement
-	public boolean placeShip(Ship ship, ShipType shipType, ShipPlacement placement) {
-		List<Cell> impactedCells = returnImpactedCells(shipType.getShipLength(), placement);
+	public boolean placeShip(Ship ship, ShipPlacement placement) {
+		List<Cell> impactedCells = returnImpactedCells(ship.getType().getShipLength(), placement);
 		boolean cellsAreInBounds = impactedCells != null;
 		boolean placementAvailable = cellsAreInBounds && checkCellsNotOccupied(impactedCells);
 		if (placementAvailable) {
-			setShip(impactedCells, shipType, ship);
+			setShip(impactedCells, ship.getType(), ship);
 			return true;
 		} else {
 			return false;
@@ -95,11 +95,14 @@ public class Grid {
 		return cells;
 	}
 
+
+	// TODO Move to Cell Class
 	public ShotResult returnCellDisplayValue (int i, int j, boolean isGameOver) {
 		return gridCells[i][j].getDisplayValue(isGameOver);
 
 	}
 
+	// TODO Move to Cell Class
 	public boolean returnIsOccupied (int i, int j) {
 		return gridCells[i][j].isShipPresent();
 	}

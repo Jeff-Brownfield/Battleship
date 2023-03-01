@@ -1,7 +1,6 @@
 package main.java.com.gamestate;
 
 import java.util.Map;
-import java.util.Scanner;
 
 public abstract class Player {
 	private static int numberOfPlayers = 0;
@@ -9,17 +8,13 @@ public abstract class Player {
 	private Grid grid;
 	private String name;
 
-	
-	public Player() {
+	public Player(String playerType) {
 		numberOfPlayers++;
 		grid = new Grid();
-		name = "Player ".concat(String.valueOf(numberOfPlayers));
+		name = playerType + " " + numberOfPlayers;
 		this.ships = Ship.getShips();
-//		getShipPlacement(grid, ships);
 	}
 
-	public abstract void getShipPlacement(Grid grid, Map<ShipType, Ship> ships);
-	
 	public Grid getGrid() {
 		return this.grid;
 	}
@@ -31,8 +26,4 @@ public abstract class Player {
 	public Map<ShipType, Ship> getShips() {
 		return ships;
 	}
-
-	public abstract Coordinate getShotCoordinates();
-
-
 }

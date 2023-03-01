@@ -19,11 +19,11 @@ public class Battleship {
 	private static UserInterface ui = new UserInterface();
 
 	public static void main(String[] args) {
+		// TODO add menu to allow for selecting human/computer players
 		Player player1 = new HumanPlayer();
 		Player player2 = new HumanPlayer();
 		game = new Battleship(player1, player2);
 		game.run();
-
 	}
 
 	public void run() {
@@ -143,8 +143,7 @@ public class Battleship {
 				ui.printBoardSetupStatus(player.getGrid(), i);
 				try {
 					ShipPlacement placement = ui.promptForShipPlacement(ship.getKey());
-					shipPlacementIsLegal = player.getGrid().placeShip(ship.getValue(),
-							ship.getKey(), placement);
+					shipPlacementIsLegal = player.getGrid().placeShip(ship.getValue(), placement);
 				} catch (InvalidCoordinatesException e) {
 					ui.printMessage(e.getMessage());
 				} catch (Exception ex) {
@@ -184,7 +183,7 @@ public class Battleship {
 			while(!shipPlacementIsLegal) {
 				ShipPlacement placement = placements.get(i);
 				shipPlacementIsLegal = player.getGrid().placeShip(
-						ships.get(i), shipType.get(i), placement);
+						ships.get(i), placement);
 			}
 			ui.clearConsole();  //System.out.println("clear");
 		}
