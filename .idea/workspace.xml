@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a61f86ac-6c05-452c-a1cb-76dd1efb69c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +39,14 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.java.com.gamecontroller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GridTests">
+  <component name="RunManager" selected="Application.Battleship">
     <configuration name="Battleship" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.com.gamecontroller.Battleship" />
       <module name="Battleship" />
@@ -121,10 +124,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Battleship" />
         <item itemvalue="JUnit.GridTests" />
         <item itemvalue="JUnit.PlayerTests.testGetGrid" />
         <item itemvalue="JUnit.PlayerTests.testGetName" />
-        <item itemvalue="Application.Battleship" />
         <item itemvalue="JUnit.PlayerTests" />
       </list>
     </recent_temporary>
